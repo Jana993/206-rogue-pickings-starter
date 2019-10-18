@@ -53,7 +53,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
 	padding: 0 30px;
 	margin: 0 auto;
 	display: flex;
@@ -65,7 +64,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 30px 30px 10px 30px;
+	padding: 30px 50px 10px 50px;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -83,6 +82,7 @@ header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -101,56 +101,64 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	margin: 0 auto;
-	justify-content: center;
+	display: flex;
+	flex-flow: column wrap;
 	align-items: center;
+	width: 90%;
 }
 
 .main-image {
 	height: auto;
-	float: left;
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	justify-content: center;
 }
 
 .main-title {
+
 }
+
 .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
 .main-title p {
-	padding: 0;
+	padding-left: 0;
+	padding-bottom: 20px;
 	font-size: 1em;
 	line-height: 25px;
+	border-bottom: 1px solid #eee;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	border-top: 1px solid #eee;
+	width: 100%;
 }
 
 .section-one h4 {
 	padding: 10px 0;
 }
 
-.section-two {
+/* FOR DESKTOP .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-}
+} */
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #eee;
 }
 .menu li {
 	padding: 10px 0;
@@ -161,16 +169,20 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #eee;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #eee;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	border-top: 3px solid #eee;
+	/* border-top: 3px solid #eee; */
 	margin: 0 auto;
 	text-align: center;
 	justify-content: center;
