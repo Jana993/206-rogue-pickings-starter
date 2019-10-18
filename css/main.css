@@ -54,16 +54,19 @@ p {
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
+	padding: 0 30px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	flex-flow: column wrap;
 	align-items: center;
 	text-align: center;
 }
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 30px 30px 10px 30px;
+	border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -71,8 +74,9 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 10px 0;
 	float: left;
+
 }
 
 header nav ul {
@@ -83,9 +87,11 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.88em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 10px;
+	display: flex;
+	flex-flow: column nowrap;
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
