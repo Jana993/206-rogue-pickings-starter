@@ -61,6 +61,7 @@ header {
 	flex-flow: column wrap;
 	align-items: center;
 	text-align: center;
+	width: 100%;
 }
 
 header h1 {
@@ -75,6 +76,7 @@ header h1 span {
 
 header nav {
 	padding: 10px 0;
+	width: 100%;
 }
 
 header nav ul {
@@ -87,8 +89,8 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 0.88em;
 	padding: 10px 10px;
-	display: flex;
-	flex-flow: column nowrap;
+	list-style: none;
+
 }
 
 header nav ul li a{
@@ -114,10 +116,6 @@ header nav ul li a{
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
 	justify-content: center;
-}
-
-.main-title {
-
 }
 
 .main-title h3 {
@@ -185,6 +183,8 @@ footer {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
@@ -195,12 +195,11 @@ footer span {
 
 
 /*** breakpoints ***/
-@media all and (min-width:768px) {
+@media only screen and (min-width:768px) {
     /* Tablet styles here */
 		header nav ul li {
 			display: inline-block;
 		}
-
 
 		.bottom-section {
 			margin: 0 auto;
@@ -226,5 +225,56 @@ footer span {
 
 @media all and (min-width:1200px) {
     /* Desktop styles here */
+		header {
+	 		justify-content: space-between;
+			padding: 20px 0 20px 0;
+ 		}
+
+ 		header h1 {
+			width: 30%;
+		}
+
+		header nav {
+			width: 50%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		header nav ul {
+		  display: flex;
+		  justify-content: space-between;
+		}
+
+		.bottom-section {
+			justify-content: flex-start;
+			flex-flow: row nowrap;
+			width: 100%;
+		  border-bottom: 1px solid #eee;
+			padding-bottom: 0;
+			align-items: flex-start;
+		}
+
+	  .section-one,
+		.section-two,
+		.section-three {
+			width: 33.3%;
+			justify-content: space-around;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		.menu,
+		.reviews,
+		.address {
+			border-bottom: none;
+		}
+
+		footer {
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+
+
 
 }
